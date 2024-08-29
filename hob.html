@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable Cheat sheet</title>
+</head>
+ 
+<body>
+    <p id="nameprint_temlit"></p>
+    <p id="nameprint"></p>
+    <p id="calculation">0</p>
+    <script>
+        // vår trede java script komentar. vår første variabel;
+        const firstname = "Hans Olav"
+        //skriver ut firstname til konsollen
+        console.log(firstname)
+        //skriver ut firstname til HTML
+        document.getElementById("nameprint").innerHTML = "Hei " + firstname
+        //skriver ut firstname til HTML med template literal
+        document.getElementById("nameprint_temlit").innerHTML = `Hei ${firstname}. `
+        //skrive et enkelt mattestykke
+        document.getElementById("calculation").innerHTML = 10 + 5
+    </script>
+</body>
+ 
+</html>
